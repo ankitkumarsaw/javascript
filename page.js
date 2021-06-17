@@ -1,4 +1,15 @@
+var menulist = document.getElementById("menulist");
+menulist.style.maxHeight = "0px";
+function togglemenu(){
+    if(menulist.style.maxHeight == "0px")
+    {
+        menulist.style.maxHeight = "150px";
+    }
+    else{
+        menulist.style.maxHeight = "0px";
 
+    }
+}
 var nmb1 = document.getElementById("nmb");
 function myFunction() {
   var x = Math.floor(Math.random() * 255);
@@ -82,15 +93,4 @@ function submitAnswer(){
     alert('Answer is wrong');
   }
 };
-var menulist = document.getElementById("menulist");
-menulist.style.maxHeight = "0px";
-function togglemenu(){
-    if(menulist.style.maxHeight == "0px")
-    {
-        menulist.style.maxHeight = "150px";
-    }
-    else{
-        menulist.style.maxHeight = "0px";
 
-    }
-}
